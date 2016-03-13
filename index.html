@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
     <link defer rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link defer rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link defer rel="stylesheet" type="text/css" href="public/css/styles.css">
     <script defer src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script defer src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -18,32 +19,45 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
+                    <p class="logoLeft navbar-text navbar-left">
+                        dino <span class="logoRight">Rosas</span>
+                    </p>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-6">
                     <ul class="navList nav nav-pills">
-                    	<li role="presentation"> <a href="#">About Me</a></li>
-                    	<li role="presentation" class="dropdown">
-						    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-						      Projects <span class="caret"></span>
-						    </a>
-						    <ul class="dropdown-menu">
-						      	<li><a href="#">Project Index</a></li>
-						      	<li role="separator" class="divider"></li>
-							    <li><a href="#">Project #1</a></li>
-							    <li><a href="#">Project #2</a></li>
-							    <li><a href="#">Project #3</a></li>
-							    <li><a href="#">Project #4</a></li>
-							    <li><a href="#">Project #5</a></li>
-						    </ul>
-						</li>
-                    	<li role="presentation"> <a href="#">Contact Me</a></li>
+                        <li role="presentation"> <a href="#">About Me</a></li>
+                        <li role="presentation" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                  Projects <span class="caret"></span>
+                                </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Project Index</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Project #1</a></li>
+                                <li><a href="#">Project #2</a></li>
+                                <li><a href="#">Project #3</a></li>
+                                <li><a href="#">Project #4</a></li>
+                                <li><a href="#">Project #5</a></li>
+                            </ul>
+                        </li>
+                        <li role="presentation"> <a href="#">Contact Me</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-2">
+                    <ul class="navbar-nav mediaLinks">
+                        <li><a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github fa-2x"></i></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </nav>
+
+    <div class="container" id="homeContainer">
+        <h1>Hi, my name is Dino!</h1>
+        <p>I'm a front-end web developer based out of San Francisco Bay Area, CA.</p>
+        <p>Welcome to my portfolio site!</p>
+    </div>
 </body>
 
 </html>
