@@ -1,0 +1,24 @@
+@font-face{		
+	font-family:'AdobeGaramond';
+	src: url('fonts/adobe-garamond-pro/Adobe-Garamond-Pro_2012.ttf')format('truetype');
+}
+
+body{
+	font-size: 1.5em;
+	-webkit-font-smoothing: antialiased;
+
+
+}
+
+.navigationBar{
+	
+	ul{
+		margin-top: 0.25em;
+		
+		a{
+			color: red;
+		}
+	}
+	
+}
+
