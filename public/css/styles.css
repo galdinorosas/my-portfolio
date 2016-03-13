@@ -5,14 +5,16 @@
 body {
   font-size: 1.5em;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-image: url("../../images/backgroundImage-l.jpg"); }
+
+[role='presentation'] {
+  width: 9em; }
 
 .navigationBar ul {
   margin-top: 0.25em;
   list-style-type: none;
   padding: 0; }
-  .navigationBar ul li {
-    display: inline; }
   .navigationBar ul a {
     color: grey;
     font-size: 1.2em; }
@@ -24,6 +26,9 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
   letter-spacing: -0.04em; }
+  .navigationBar .logoLeft a {
+    color: black;
+    text-decoration: none; }
   .navigationBar .logoLeft .logoRight {
     font-family: AdobeGaramond, Helvetica, Arial, sans-serif;
     margin-left: -0.3em; }
@@ -31,12 +36,28 @@ body {
 .navigationBar .collapseButton {
   margin-top: -3em; }
 
-#homeContainer h1, #homeContainer p {
-  text-align: center; }
+#homeContainer {
+  color: white; }
+  #homeContainer h1 {
+    font-size: 3em;
+    margin: 3em 0em 0em 2em; }
+  #homeContainer p {
+    margin: 5em 0em; }
+  #homeContainer .firstHomeMessage {
+    text-align: center;
+    font-size: 1.25em; }
+  #homeContainer .secondHomeMessage {
+    text-align: right;
+    margin-right: 7em; }
 
-#homeContainer h1 {
-  font-size: 3em;
-  margin-top: 2em; }
+#aboutMeContainer {
+  display: none; }
 
-#homeContainer p {
-  margin: 5em 0em; }
+@media only screen and (max-width: 450px) {
+  body {
+    background-image: url("../../images/backgroundImage-s.jpg"); } }
+
+@media only screen and (max-width: 750px) {
+  body {
+    background-image: url("../../images/backgroundImage-m.jpg");
+    background-repeat: none; } }

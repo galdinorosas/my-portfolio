@@ -15,17 +15,17 @@
 </head>
 
 <body>
-    <nav class="navigationBar navbar navbar-default navbar-static-top">
+    <nav class="navigationBar navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
                     <p class="logoLeft navbar-text navbar-left">
-                        dino <span class="logoRight">Rosas</span>
+                        <a href="#">dino <span class="logoRight">Rosas</span></a>
                     </p>
                 </div>
                 <div class="col-sm-6">
                     <ul class="navList nav nav-pills">
-                        <li role="presentation"> <a href="#">About Me</a></li>
+                        <li role="presentation"> <a class="aboutMeLink"href="#">About Me</a></li>
                         <li role="presentation" class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                                   Projects <span class="caret"></span>
@@ -40,23 +40,32 @@
                                 <li><a href="#">Project #5</a></li>
                             </ul>
                         </li>
-                        <li role="presentation"> <a href="#">Contact Me</a></li>
+                        <li role="presentation"> <a href="mailto:dino.rosas@gmail.com">Contact Me</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2">
                     <ul class="navbar-nav mediaLinks">
-                        <li><a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-                        <li><a href="#"><i class="fa fa-github fa-2x"></i></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/galdinorosas" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+                        <li><a href="https://github.com/galdinorosas" target="_blank"><i class="fa fa-github fa-2x"></i></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
-
     <div class="container" id="homeContainer">
         <h1>Hi, my name is Dino!</h1>
-        <p>I'm a front-end web developer based out of San Francisco Bay Area, CA.</p>
-        <p>Welcome to my portfolio site!</p>
+        <p class="firstHomeMessage">I'm a front-end web developer located in San Francisco Bay Area, CA.</p>
+        <p class="secondHomeMessage">Welcome to my portfolio site!</p>
+    </div>
+    <div class="container" id="aboutMeContainer">
+        <div class="jumbotron">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Dino Rosas, I'm a front-end web developer from the Bay Area, CA. I was always curious and wanted to understand how the web works and as a result I got into into web development. The idea of starting from a blank canvas/web-page is one of the reasons why I enjoy coding, then to able to "paint" on this canvas by using HTML/CSS, afterwards Javascript is used to add in any neat features to bring the canvas/web-page alive.</p>
+            <p>
+                I received my bachelors degree in Chemical Engineering from San Jose State University and I currently work as a junior reliability engineer in Milpitas, CA. I first was introduced to programming in college with an intro to java programming course and I loved it! After I graduated and started working, I had some free time on my hands so I picked up programming as a hobby. I enjoyed learning about how websites are created from general courses on Udacity and Code-academy but I thought the material was not very in-depth. Realizing at how much time I was spending and how easy it was to get into rhythm when coding, I decided to pursue web development as a career. I have since then enrolled in courses at Thinkful to improve and learn more about front-end web development.
+            </p>
+        </div>
     </div>
 </body>
 
