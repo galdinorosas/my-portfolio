@@ -6,10 +6,10 @@ body {
   font-size: 1.5em;
   -webkit-font-smoothing: antialiased;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-image: url("../../images/backgroundImage-l.jpg"); }
+  background-image: url("../../images/backgroundImage-s.jpg"); }
 
 [role='presentation'] {
-  width: 9em; }
+  width: 6em; }
 
 .navigationBar ul {
   margin-top: 0.25em;
@@ -17,7 +17,7 @@ body {
   padding: 0; }
   .navigationBar ul a {
     color: grey;
-    font-size: 1.2em; }
+    font-size: 0.8em; }
 
 .navigationBar .mediaLinks li {
   margin: 0.5em 0.5em 0em 0.5em; }
@@ -33,11 +33,9 @@ body {
     font-family: AdobeGaramond, Helvetica, Arial, sans-serif;
     margin-left: -0.3em; }
 
-.navigationBar .collapseButton {
-  margin-top: -3em; }
-
 #homeContainer {
-  color: white; }
+  color: white;
+  margin-top: 5em; }
   #homeContainer h1 {
     font-size: 3em;
     margin: 3em 0em 0em 2em; }
@@ -51,13 +49,134 @@ body {
     margin-right: 7em; }
 
 #aboutMeContainer {
-  display: none; }
+  display: none;
+  margin-top: 13em; }
+  #aboutMeContainer p {
+    font-size: 1em; }
+  #aboutMeContainer h2 {
+    margin-top: 0em;
+    font-size: 1.5em; }
 
-@media only screen and (max-width: 450px) {
-  body {
-    background-image: url("../../images/backgroundImage-s.jpg"); } }
+#projectsContainer {
+  display: none;
+  color: white;
+  margin-top: 11em; }
+  #projectsContainer h2 {
+    font-size: 1.5em; }
+  #projectsContainer .col-sm-6 {
+    color: lightgrey; }
+    #projectsContainer .col-sm-6 h3 {
+      font-size: 1.25em; }
+    #projectsContainer .col-sm-6 div {
+      width: 100%; }
+    #projectsContainer .col-sm-6 .projectLivePage i {
+      margin: 0.25em 0em 0.25em 38%; }
+    #projectsContainer .col-sm-6 .projectCodePage i {
+      margin: 0em 0em 0em 1em; }
+    #projectsContainer .col-sm-6 #spotifyEventsFontAwesome,
+    #projectsContainer .col-sm-6 #pictionaryFontAwesome {
+      margin: 0.25em 0em 0em 46%; }
 
-@media only screen and (max-width: 750px) {
+#interestsContainer {
+  display: none;
+  margin-top: 13em; }
+  #interestsContainer h2 {
+    margin: 0;
+    font-size: 1.5em; }
+  #interestsContainer .col-sm-3 h3 {
+    font-size: 1.25em; }
+  #interestsContainer .col-sm-3 p {
+    font-size: 1em; }
+
+@media only screen and (min-width: 450px) {
+  #aboutMeContainer {
+    margin-top: 15em; }
+  .navigationBar ul a {
+    font-size: .8em; }
+  #projectsContainer .col-sm-6 .projectLivePage i {
+    margin: 0.25em 0em 0.25em 45%; }
+  [role='presentation'] {
+    width: 7em; } }
+
+@media only screen and (min-width: 750px) {
   body {
-    background-image: url("../../images/backgroundImage-m.jpg");
-    background-repeat: none; } }
+    background-image: url("../../images/backgroundImage-m.jpg"); }
+  #homeContainer {
+    color: white;
+    margin-top: 2em; }
+  #aboutMeContainer {
+    display: none;
+    margin-top: 5em; }
+    #aboutMeContainer p {
+      font-size: 1.2em; }
+    #aboutMeContainer h2 {
+      margin-top: 0em;
+      font-size: 2em; }
+  .navigationBar ul {
+    margin-top: 0.25em;
+    list-style-type: none;
+    padding: 0; }
+    .navigationBar ul a {
+      color: grey;
+      font-size: 1em; }
+  [role='presentation'] {
+    width: 8em; }
+  #projectsContainer {
+    margin-top: 7em; }
+    #projectsContainer h2 {
+      font-size: 2em; }
+    #projectsContainer .col-sm-6 h3 {
+      font-size: 1.5em; }
+    #projectsContainer .col-sm-6 .projectLivePage i {
+      margin: 0.25em 0em 0.25em 36%; }
+  #interestsContainer {
+    margin-top: 5em; }
+    #interestsContainer h2 {
+      margin: 0;
+      font-size: 2em; }
+    #interestsContainer .col-sm-3 h3 {
+      font-size: 1.5em; }
+    #interestsContainer .col-sm-3 p {
+      font-size: 1.1em; } }
+
+@media only screen and (min-width: 950px) {
+  body {
+    background-image: url("../../images/backgroundImage-l.jpg"); }
+  #projectsContainer {
+    margin-top: 3em; }
+    #projectsContainer h2 {
+      font-size: 2.5em; }
+    #projectsContainer .col-sm-6 h3 {
+      font-size: 1.75em; }
+    #projectsContainer .col-sm-6 .projectLivePage i {
+      margin: 0.25em 0em 0.25em 40%; } }
+
+@media only screen and (min-width: 1155px) {
+  #projectsContainer {
+    margin-top: 3em; }
+    #projectsContainer h2 {
+      font-size: 2.5em; }
+    #projectsContainer .col-sm-6 h3 {
+      font-size: 1.75em; }
+    #projectsContainer .col-sm-6 .projectLivePage i {
+      margin: 0.25em 0em 0.25em 42%; }
+    #projectsContainer .col-sm-6 #spotifyEventsFontAwesome,
+    #projectsContainer .col-sm-6 #pictionaryFontAwesome {
+      margin: 0.25em 0em 0em 47%; }
+  #aboutMeContainer {
+    display: none;
+    margin-top: 5em; }
+    #aboutMeContainer p {
+      font-size: 1.4em; }
+    #aboutMeContainer h2 {
+      margin-top: 0em;
+      font-size: 2.25em; }
+  .navigationBar ul {
+    margin-top: 0.25em;
+    list-style-type: none;
+    padding: 0; }
+    .navigationBar ul a {
+      color: grey;
+      font-size: 1.25em; }
+  [role='presentation'] {
+    width: 9em; } }

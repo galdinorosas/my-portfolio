@@ -7,11 +7,11 @@ body {
     font-size: 1.5em;
     -webkit-font-smoothing: antialiased;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-image: url('../../images/backgroundImage-l.jpg');
+    background-image: url('../../images/backgroundImage-s.jpg');
 }
 
 [role='presentation'] {
-	width: 9em;
+    width: 6em;
 }
 
 .navigationBar {
@@ -21,7 +21,7 @@ body {
         padding: 0;
         a {
             color: grey;
-            font-size: 1.2em;
+            font-size: 0.8em;
         }
     }
     .mediaLinks {
@@ -42,13 +42,11 @@ body {
             margin-left: -0.3em;
         }
     }
-    .collapseButton {
-        margin-top: -3em;
-    }
 }
 
 #homeContainer {
     color: white;
+    margin-top: 5em;
     h1 {
         font-size: 3em;
         margin: 3em 0em 0em 2em;
@@ -66,21 +64,223 @@ body {
     }
 }
 
-#aboutMeContainer{
-    display:none;
-}
-
-@media only screen and (max-width:450px){
-    body{
-        background-image: url('../../images/backgroundImage-s.jpg');
+#aboutMeContainer {
+    display: none;
+    margin-top: 13em;
+    p {
+        font-size: 1em;
     }
-    
+    h2 {
+        margin-top: 0em;
+        font-size: 1.5em;
+    }
 }
 
-@media only screen and (max-width:750px){
-    body{
+#projectsContainer {
+    display: none;
+    color: white;
+    margin-top: 11em;
+    h2 {
+        font-size: 1.5em;
+    }
+    .col-sm-6 {
+        color: lightgrey;
+        h3 {
+            font-size: 1.25em;
+        }
+        div {
+            width: 100%;
+        }
+        .projectLivePage i {
+            margin: 0.25em 0em 0.25em 38%;
+        }
+        .projectCodePage i {
+            margin: 0em 0em 0em 1em;
+        }
+        #spotifyEventsFontAwesome,
+        #pictionaryFontAwesome {
+            margin: 0.25em 0em 0em 46%;
+        }
+    }
+}
+
+#interestsContainer{
+    display: none;
+    margin-top: 13em;
+
+    h2{
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    .col-sm-3{
+        h3{
+            font-size: 1.25em;
+        }
+
+        p{
+            font-size: 1em;
+        }
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    #aboutMeContainer {
+        margin-top: 15em;
+    }
+    .navigationBar {
+        ul {
+            ;
+            a {
+                font-size: .8em;
+            }
+        }
+    }
+    #projectsContainer {
+        .col-sm-6 {
+            .projectLivePage i {
+                margin: 0.25em 0em 0.25em 45%;
+            }
+        }
+    }
+    [role='presentation'] {
+        width: 7em;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    body {
         background-image: url('../../images/backgroundImage-m.jpg');
-        background-repeat: none;
     }
-    
+    #homeContainer {
+        color: white;
+        margin-top: 2em;
+    }
+    #aboutMeContainer {
+        display: none;
+        margin-top: 5em;
+        p {
+            font-size: 1.2em;
+        }
+        h2 {
+            margin-top: 0em;
+            font-size: 2em;
+        }
+    }
+    .navigationBar {
+        ul {
+            margin-top: 0.25em;
+            list-style-type: none;
+            padding: 0;
+            a {
+                color: grey;
+                font-size: 1em;
+            }
+        }
+    }
+    [role='presentation'] {
+        width: 8em;
+    }
+    #projectsContainer {
+        margin-top: 7em;
+        h2 {
+            font-size: 2em;
+        }
+        .col-sm-6 {
+            h3 {
+                font-size: 1.5em;
+            }
+            .projectLivePage i {
+                margin: 0.25em 0em 0.25em 36%;
+            }
+        }
+    }
+
+
+    #interestsContainer{
+        margin-top: 5em;
+
+        h2{
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .col-sm-3{
+            h3{
+                font-size: 1.5em;
+            }
+
+            p{
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    body {
+        background-image: url('../../images/backgroundImage-l.jpg');
+    }
+    #projectsContainer {
+        margin-top: 3em;
+        h2 {
+            font-size: 2.5em;
+        }
+        .col-sm-6 {
+            h3 {
+                font-size: 1.75em;
+            }
+            .projectLivePage i {
+                margin: 0.25em 0em 0.25em 40%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1155px) {
+    #projectsContainer {
+        margin-top: 3em;
+        h2 {
+            font-size: 2.5em;
+        }
+        .col-sm-6 {
+            h3 {
+                font-size: 1.75em;
+            }
+            .projectLivePage i {
+                margin: 0.25em 0em 0.25em 42%;
+            }
+            #spotifyEventsFontAwesome,
+            #pictionaryFontAwesome {
+                margin: 0.25em 0em 0em 47%;
+            }
+        }
+    }
+    #aboutMeContainer {
+        display: none;
+        margin-top: 5em;
+        p {
+            font-size: 1.4em;
+        }
+        h2 {
+            margin-top: 0em;
+            font-size: 2.25em;
+        }
+    }
+    .navigationBar {
+        ul {
+            margin-top: 0.25em;
+            list-style-type: none;
+            padding: 0;
+            a {
+                color: grey;
+                font-size: 1.25em;
+            }
+        }
+    }
+    [role='presentation'] {
+        width: 9em;
+    }
+
 }
