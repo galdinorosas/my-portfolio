@@ -6,7 +6,7 @@ body {
   font-size: 1.5em;
   -webkit-font-smoothing: antialiased;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-image: url("../../images/backgroundImage-s.jpg"); }
+  background-image: url("../images/backgroundImage-s.jpg"); }
 
 [role='presentation'] {
   width: 6em; }
@@ -100,7 +100,7 @@ body {
 
 @media only screen and (min-width: 750px) {
   body {
-    background-image: url("../../images/backgroundImage-m.jpg"); }
+    background-image: url("../images/backgroundImage-m.jpg"); }
   #homeContainer {
     color: white;
     margin-top: 2em; }
@@ -141,7 +141,7 @@ body {
 
 @media only screen and (min-width: 950px) {
   body {
-    background-image: url("../../images/backgroundImage-l.jpg"); }
+    background-image: url("../images/backgroundImage-l.jpg"); }
   #projectsContainer {
     margin-top: 3em; }
     #projectsContainer h2 {

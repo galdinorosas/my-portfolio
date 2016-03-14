@@ -7,7 +7,7 @@ body {
     font-size: 1.5em;
     -webkit-font-smoothing: antialiased;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-image: url('../../images/backgroundImage-s.jpg');
+    background-image: url('../images/backgroundImage-s.jpg');
 }
 
 [role='presentation'] {
@@ -104,21 +104,18 @@ body {
     }
 }
 
-#interestsContainer{
+#interestsContainer {
     display: none;
     margin-top: 13em;
-
-    h2{
+    h2 {
         margin: 0;
         font-size: 1.5em;
     }
-
-    .col-sm-3{
-        h3{
+    .col-sm-3 {
+        h3 {
             font-size: 1.25em;
         }
-
-        p{
+        p {
             font-size: 1em;
         }
     }
@@ -150,7 +147,7 @@ body {
 
 @media only screen and (min-width: 750px) {
     body {
-        background-image: url('../../images/backgroundImage-m.jpg');
+        background-image: url('../images/backgroundImage-m.jpg');
     }
     #homeContainer {
         color: white;
@@ -195,22 +192,17 @@ body {
             }
         }
     }
-
-
-    #interestsContainer{
+    #interestsContainer {
         margin-top: 5em;
-
-        h2{
+        h2 {
             margin: 0;
             font-size: 2em;
         }
-
-        .col-sm-3{
-            h3{
+        .col-sm-3 {
+            h3 {
                 font-size: 1.5em;
             }
-
-            p{
+            p {
                 font-size: 1.1em;
             }
         }
@@ -219,7 +211,7 @@ body {
 
 @media only screen and (min-width: 950px) {
     body {
-        background-image: url('../../images/backgroundImage-l.jpg');
+        background-image: url('../images/backgroundImage-l.jpg');
     }
     #projectsContainer {
         margin-top: 3em;
@@ -235,7 +227,6 @@ body {
             }
         }
     }
-
 }
 
 @media only screen and (min-width: 1155px) {
@@ -282,5 +273,4 @@ body {
     [role='presentation'] {
         width: 9em;
     }
-
 }
