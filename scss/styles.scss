@@ -33,6 +33,8 @@ body {
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 1em;
         letter-spacing: -0.04em;
+        width: 4em;
+        margin: 2.1em 0em 0em -0.5em;
         a {
             color: black;
             text-decoration: none;
@@ -46,7 +48,7 @@ body {
 
 #homeContainer {
     color: white;
-    margin-top: 11em;
+    margin-top: 5em;
     h1 {
         font-size: 2em;
         margin: 3em 0em 0em 0em;
@@ -66,7 +68,7 @@ body {
 
 #aboutMeContainer {
     display: none;
-    margin-top: 15em;
+    margin-top: 7.5em;
     p {
         font-size: 1em;
     }
@@ -79,7 +81,7 @@ body {
 #projectsContainer {
     display: none;
     color: white;
-    margin-top: 11em;
+    margin-top: 6em;
     h2 {
         font-size: 1.5em;
     }
@@ -106,7 +108,7 @@ body {
 
 #interestsContainer {
     display: none;
-    margin-top: 15.5em;
+    margin-top: 7.5em;
     h2 {
         margin: 0;
         font-size: 1.5em;
@@ -114,6 +116,9 @@ body {
     .col-sm-3 {
         h3 {
             font-size: 1.25em;
+        }
+        h5{
+            text-align: right;
         }
         p {
             font-size: 1em;
@@ -123,13 +128,17 @@ body {
 
 @media only screen and (min-width: 450px) {
     #aboutMeContainer {
-        margin-top: 12em;
+        margin-top: 7em;
     }
     .navigationBar {
+        .logoLeft {
+            margin: 1.3em 0em 0em -0.5em;
+        }
+
         ul {
             ;
             a {
-                font-size: .8em;
+                font-size: .7em;
             }
         }
     }
@@ -141,12 +150,15 @@ body {
         }
     }
     [role='presentation'] {
-        width: 7em;
+        width: 5em;
     }
     #interestsContainer {
-        display: none;
-        margin-top: 12em;
+        margin-top: 7em;
     }
+}
+
+@media only screen and (min-width:530px) {
+    
 }
 
 @media only screen and (min-width: 750px) {
@@ -178,6 +190,10 @@ body {
         }
     }
     .navigationBar {
+        .logoLeft {
+            margin: 0.9em 0em 0em 0em;
+        }
+
         ul {
             margin-top: 0.25em;
             list-style-type: none;

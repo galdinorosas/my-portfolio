@@ -25,7 +25,9 @@ body {
 .navigationBar .logoLeft {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
-  letter-spacing: -0.04em; }
+  letter-spacing: -0.04em;
+  width: 4em;
+  margin: 2.1em 0em 0em -0.5em; }
   .navigationBar .logoLeft a {
     color: black;
     text-decoration: none; }
@@ -35,7 +37,7 @@ body {
 
 #homeContainer {
   color: white;
-  margin-top: 11em; }
+  margin-top: 5em; }
   #homeContainer h1 {
     font-size: 2em;
     margin: 3em 0em 0em 0em; }
@@ -50,7 +52,7 @@ body {
 
 #aboutMeContainer {
   display: none;
-  margin-top: 15em; }
+  margin-top: 7.5em; }
   #aboutMeContainer p {
     font-size: 1em; }
   #aboutMeContainer h2 {
@@ -60,7 +62,7 @@ body {
 #projectsContainer {
   display: none;
   color: white;
-  margin-top: 11em; }
+  margin-top: 6em; }
   #projectsContainer h2 {
     font-size: 1.5em; }
   #projectsContainer .col-sm-6 {
@@ -79,27 +81,30 @@ body {
 
 #interestsContainer {
   display: none;
-  margin-top: 15.5em; }
+  margin-top: 7.5em; }
   #interestsContainer h2 {
     margin: 0;
     font-size: 1.5em; }
   #interestsContainer .col-sm-3 h3 {
     font-size: 1.25em; }
+  #interestsContainer .col-sm-3 h5 {
+    text-align: right; }
   #interestsContainer .col-sm-3 p {
     font-size: 1em; }
 
 @media only screen and (min-width: 450px) {
   #aboutMeContainer {
-    margin-top: 12em; }
+    margin-top: 7em; }
+  .navigationBar .logoLeft {
+    margin: 1.3em 0em 0em -0.5em; }
   .navigationBar ul a {
-    font-size: .8em; }
+    font-size: .7em; }
   #projectsContainer .col-sm-6 .projectLivePage i {
     margin: 0.25em 0em 0.25em 40%; }
   [role='presentation'] {
-    width: 7em; }
+    width: 5em; }
   #interestsContainer {
-    display: none;
-    margin-top: 12em; } }
+    margin-top: 7em; } }
 
 @media only screen and (min-width: 750px) {
   body {
@@ -121,6 +126,8 @@ body {
     #aboutMeContainer h2 {
       margin-top: 0em;
       font-size: 2em; }
+  .navigationBar .logoLeft {
+    margin: 0.9em 0em 0em 0em; }
   .navigationBar ul {
     margin-top: 0.25em;
     list-style-type: none;
