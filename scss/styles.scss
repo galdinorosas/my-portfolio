@@ -3,11 +3,26 @@
     src: url('fonts/adobe-garamond-pro/Adobe-Garamond-Pro-Semibold_2011.ttf')format('truetype'), url('fonts/adobe-garamond-pro/Adobe-Garamond-Pro_2012.ttf')format('truetype');
 }
 
+html {
+    height: 100%;
+    background: url('../images/backgroundImage-s.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 7.5em;
+}
+
+
 body {
     font-size: 1.5em;
+    height: 100%;
     -webkit-font-smoothing: antialiased;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-image: url('../images/backgroundImage-s.jpg');
+    // background-image: url('../images/backgroundImage-s.jpg');
+    // // background-repeat: inherit;
+    // background-size: cover;
+    background-color: transparent;
 }
 
 [role='presentation'] {
@@ -15,26 +30,51 @@ body {
 }
 
 .navigationBar {
-    ul {
-        margin-top: 0.25em;
+    border-radius: 0;
+    .mediaLinks {
         list-style-type: none;
         padding: 0;
+        margin-top: 0.75em;
+        float: right;
+        width: 4em;
         a {
             color: grey;
             font-size: 0.8em;
         }
-    }
-    .mediaLinks {
         li {
-            margin: 0.5em 0.5em 0em 0.5em;
+            float: left;
+        }
+        li:nth-child(1) {
+            margin-right: 15%;
+        }
+    }
+    .navList {
+        list-style-type: none;
+        padding: 0;
+        margin: 0.25em auto;
+        width: 13em;
+        a {
+            color: grey;
+            font-size: 0.8em;
+        }
+        // li:nth-child(3), li:nth-child(4){
+        //     display: none;
+        // }
+        li.interestsListItem,
+        li.contactListItem {
+            display: none;
+        }
+        ul.dropdown-menu {
+            margin-left: -3em;
         }
     }
     .logoLeft {
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-size: 1em;
+        font-size: 0.7em;
         letter-spacing: -0.04em;
         width: 4em;
-        margin: 2.1em 0em 0em -0.5em;
+        margin: 0em;
+        line-height: 4;
         a {
             color: black;
             text-decoration: none;
@@ -48,17 +88,14 @@ body {
 
 #homeContainer {
     color: white;
-    margin-top: 5em;
     h1 {
         font-size: 2em;
-        margin: 3em 0em 0em 0em;
-    }
-    p {
-        margin: 5em 0em;
+        margin: 15% 0em 0em 0em;
     }
     .firstHomeMessage {
         text-align: center;
         font-size: 1.25em;
+        margin: 40% 0em;
     }
     .secondHomeMessage {
         text-align: right;
@@ -68,9 +105,8 @@ body {
 
 #aboutMeContainer {
     display: none;
-    margin-top: 7.5em;
     p {
-        font-size: 1em;
+        font-size: 0.9em;
     }
     h2 {
         margin-top: 0em;
@@ -81,7 +117,6 @@ body {
 #projectsContainer {
     display: none;
     color: white;
-    margin-top: 6em;
     h2 {
         font-size: 1.5em;
     }
@@ -94,212 +129,189 @@ body {
             width: 100%;
         }
         .projectLivePage i {
-            margin: 0.25em 0em 0.25em 33%;
-        }
-        .projectCodePage i {
-            margin: 0em 0em 0em 1em;
+            margin-right: 0.5em;
         }
         #spotifyEventsFontAwesome,
         #pictionaryFontAwesome {
             margin: 0.25em 0em 0em 46%;
+        }
+        div.container-fluid {
+            width: 7em;
+            margin-top: 0.35em;
+        }
+        .container {
+            div.container-fluid:nth-child(4) {
+                width: 0;
+            }
         }
     }
 }
 
 #interestsContainer {
     display: none;
-    margin-top: 7.5em;
     h2 {
         margin: 0;
-        font-size: 1.5em;
+        font-size: 1em;
     }
     .col-sm-3 {
         h3 {
-            font-size: 1.25em;
+            font-size: 1em;
         }
-        h5{
+        h5 {
             text-align: right;
         }
         p {
-            font-size: 1em;
+            font-size: 0.8em;
         }
+    }
+    .jumbotron {
+        padding-right: 30px;
+        padding-left: 30px;
     }
 }
 
 @media only screen and (min-width: 450px) {
-    #aboutMeContainer {
-        margin-top: 7em;
-    }
     .navigationBar {
+        .navList {
+            width: 21em;
+            margin: 0.6em auto;
+            li.interestsListItem {
+                display: block;
+            }
+            ul.dropdown-menu {
+                margin-left: 0em;
+            }
+        }
         .logoLeft {
-            margin: 1.3em 0em 0em -0.5em;
+            font-size: 0.9em
         }
-
-        ul {
-            ;
-            a {
-                font-size: .7em;
-            }
-        }
-    }
-    #projectsContainer {
-        .col-sm-6 {
-            .projectLivePage i {
-                margin: 0.25em 0em 0.25em 40%;
-            }
+        .mediaLinks {
+            margin: 1em auto;
         }
     }
     [role='presentation'] {
-        width: 5em;
+        width: 6em;
     }
     #interestsContainer {
-        margin-top: 7em;
+        font-size: 1em;
+    }
+    #homeContainer {
+        .firstHomeMessage {
+            margin: 30% 0;
+        }
     }
 }
 
 @media only screen and (min-width:530px) {
-    
-}
-
-@media only screen and (min-width: 750px) {
-    body {
+    html {
         background-image: url('../images/backgroundImage-m.jpg');
+        background-size: cover;
+    }
+    #aboutMeContainer {
+        font-size: 1.1em;
     }
     #homeContainer {
-        color: white;
-        margin-top: 2em;
         h1 {
-            font-size: 2.5em;
+            margin-top: 5%;
         }
         .firstHomeMessage {
-            font-size: 1.5em;
+            margin: 30% 0;
         }
-        .secondHomeMessage {
-            font-size: 1.2em;
+    }
+    #interestsContainer {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width:650px) {
+    [role='presentation'] {
+        width: 7em;
+    }
+    .navigationBar {
+        .navList {
+            width: 30em;
+            margin: 0.8em auto;
+            li.contactListItem {
+                display: inline-block;
+            }
+        }
+        .logoLeft {
+            font-size: 1em;
+        }
+        .mediaLinks {
+            margin-top: 1.25em;
+        }
+    }
+    #homeContainer {
+        h1 {
+            margin-top: 10%;
+        }
+        .firstHomeMessage {
+            margin: 20% 0;
         }
     }
     #aboutMeContainer {
-        display: none;
-        margin-top: 5em;
-        p {
-            font-size: 1.2em;
-        }
-        h2 {
-            margin-top: 0em;
-            font-size: 2em;
-        }
+        font-size: 1.2em;
     }
-    .navigationBar {
-        .logoLeft {
-            margin: 0.9em 0em 0em 0em;
-        }
+}
 
-        ul {
-            margin-top: 0.25em;
-            list-style-type: none;
-            padding: 0;
+@media only screen and (min-width: 765px) {
+    .navigationBar {
+        .mediaLinks {
+            margin-top: 0.9em;
+            width: 5em;
+            li a i {
+                font-size: 2.5em;
+            }
+        }
+        .navList {
+            width: 35em;
+            margin: .55em auto;
             a {
-                color: grey;
-                font-size: 1em;
+                font-size: 1.1em;
             }
         }
     }
     [role='presentation'] {
         width: 8em;
     }
-    #projectsContainer {
-        margin-top: 3em;
-        h2 {
-            font-size: 2em;
+    #interestsContainer {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .navigationBar {
+        .navList {
+            width: 35em;
         }
-        .col-sm-6 {
-            h3 {
-                font-size: 1.5em;
-            }
-            .projectLivePage i {
-                margin: 0.25em 0em 0.25em 36%;
-            }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navigationBar {
+        .mediaLinks {
+            float: right;
+        }
+    }
+    #homeContainer {
+        font-size: 1.25em;
+        h1 {
+            margin-top: 3%;
+        }
+    }
+    html {
+        background-image: url('../images/backgroundImage-l.jpg');
+        background-size: cover;
+    }
+    #aboutMeContainer {
+        font-size: 1.3em;
+        .jumbotron {
+            font-size: 1.1em;
         }
     }
     #interestsContainer {
-        margin-top: 5em;
-        h2 {
-            margin: 0;
-            font-size: 2em;
-        }
-        .col-sm-3 {
-            h3 {
-                font-size: 1.5em;
-            }
-            p {
-                font-size: 1.1em;
-            }
-        }
+        font-size: 1.3em;
     }
 }
 
-@media only screen and (min-width: 950px) {
-    body {
-        background-image: url('../images/backgroundImage-l.jpg');
-    }
-    #projectsContainer {
-        margin-top: 3em;
-        h2 {
-            font-size: 2.5em;
-        }
-        .col-sm-6 {
-            h3 {
-                font-size: 1.75em;
-            }
-            .projectLivePage i {
-                margin: 0.25em 0em 0.25em 40%;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 1155px) {
-    #projectsContainer {
-        margin-top: 3em;
-        h2 {
-            font-size: 2.5em;
-        }
-        .col-sm-6 {
-            h3 {
-                font-size: 1.75em;
-            }
-            .projectLivePage i {
-                margin: 0.25em 0em 0.25em 42%;
-            }
-            #spotifyEventsFontAwesome,
-            #pictionaryFontAwesome {
-                margin: 0.25em 0em 0em 47%;
-            }
-        }
-    }
-    #aboutMeContainer {
-        display: none;
-        margin-top: 5em;
-        p {
-            font-size: 1.4em;
-        }
-        h2 {
-            margin-top: 0em;
-            font-size: 2.25em;
-        }
-    }
-    .navigationBar {
-        ul {
-            margin-top: 0.25em;
-            list-style-type: none;
-            padding: 0;
-            a {
-                color: grey;
-                font-size: 1.25em;
-            }
-        }
-    }
-    [role='presentation'] {
-        width: 9em;
-    }
-}
